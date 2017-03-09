@@ -1,2 +1,3 @@
-# TechEvalGroup-Play
-This is the github repo for TechEvalGroup's Play Framework demonstration.
+# TechEvalGroup-Play 
+
+This is the github repo for TechEvalGroups Play framework demonstration.

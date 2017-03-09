@@ -1,0 +1,20 @@
+@implicitFieldConstructor = @{ helper.FieldConstructor(twitterBootstrapInput.render) }
+
+@main("Welcome to Play") {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+    <div class="navbar nabar-fixed-top">
+    <div class="navbar-inner">
+    <a id="titleLink" class="brand" href="/">Play framework demonstration</a>
+    </div>
+    </div>
+    <div class="container">
+
+    <ul id="playlists"></ul>
+
+    <form method="POST" action="@routes.PlaylistController.addPlaylist()">
+        <input type="text" name="name"/>
+        <button>Add Playlist</button>
+    </form>
+
+    </div>
+}
