@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/TechEvalGroup-Play -Dhttp.port=$PORT
+web: target/universal/stage/bin/root -Dhttp.port=$PORT
