@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/play-java-intro -Dhttp.port=$PORT
+web: target/universal/stage/bin/play-java-intro -Dapplication.mode=dev -Dhttp.port=$PORT
