@@ -8,13 +8,41 @@
     </div>
     </div>
     <div class="container">
-
-    <ul id="playlists"></ul>
-
+    <p>This application is the front-end for two models, Playlist and Songs, with the same definitions that we
+      have been using in our CMPT 470 assignments. They are written to an in-memory H2 instance.</p>
     <form method="POST" action="@routes.PlaylistController.addPlaylist()">
-        <input type="text" name="name"/>
-        <button>Add Playlist</button>
+    <div class="form-group">
+        <hr>
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name"/><br>
+        <small class="form-text text-muted">Name of playlist to be created</small>
+        <br><button>Add Playlist</button>
+        <a href="playlists">REST API endpoint for obtaining results</a>
+        <hr>
+    </div>
     </form>
+    <form method="POST" action="@routes.SongController.addSong()">
+    <div class="form-group">
+        <label for="artist">Artist</label>
+        <input type="text" name="artist"/><br>
+        <small class="form-text text-muted">Song artist</small>
+        <label for="title">Title</label>
+        <input type="text" name="title"/><br>
+        <small class="form-text text-muted">Song title</small>
+        <label for="album">Album</label>
+        <input type="text" name="album"/><br>
+        <small class="form-text text-muted">Song album</small>
+        <label for="duration">Duration</label>
+        <input type="text" name="duration"/><br>
+        <small class="form-text text-muted">Song duration. To see an exception, enter a non-integer here.</small>
+        <br><button>Add Song</button>
+        <a href="songs">REST API endpoint for obtaining results</a><
+        <p>To see the exception handling funcitonality, enter in a non-integer into the 'duration' field above.
+          Since this is in production mode, source code is not displayed for obvious reasons, just a reference
+          code that you can search for in the logs.</p>
+        <hr>
+    </form>
+    </div>
 
     </div>
 }
